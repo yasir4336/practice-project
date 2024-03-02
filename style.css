@@ -4,9 +4,11 @@
 }
 
 .navbar{
-    height:70px;
+    justify-content: center;
+    padding: 20px;
+    height: 20px;
     width: 100%;
-    background-color: blue;
+    background-color:blue;
     color: white;
 }
 
