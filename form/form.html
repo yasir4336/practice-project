@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login Form </title>
+    <link rel="stylesheet" href="../style.css">
     <style>
         form{
             padding-left: 500px;
-            padding-top: 10px;
+            padding-top: 50px;
         }
         fieldset{
             background-color:aliceblue;
             border: 1px solid gray;
             width: fit-content;
+            padding-left: 6px;
         }
         button{
             border: 1px solid black;
@@ -20,11 +22,26 @@
             justify-content: center;
             margin-left: 100px;
             width: 150px;
+            height: 25px;
+        }
+        .navbar{
+            justify-content: center;
+            padding: 20px;
+            height: 20px;
+            width: 100%;
+            background-color:blue;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <a href="../index.html"> Home</a>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../projects/project.html">Project</a>
+        <a href="../skills/skills.html">Skills</a>
+        <a href="../contactme/contact.html">Contact Us</a>
+        <a href="../form/form.html">Registeration Form</a>
+    </div>
     <br>
     <br>
     <form action="">
@@ -34,19 +51,24 @@
         <input type="file" name="upload picture">
         <input type="submit" value="upload">
         <br>
+        <br>
         <p>Name:
             <input type="text" name="name" placeholder="First Name" size="16" maxlength="30">
             <input type="text" name="name" placeholder="Last Name" size="16" maxlength="30">
         </p>
+        <br>
         <p>Email:
             <input type="email" name="email" placeholder="example@gmail.com" size="38" maxlength="30">
         </p>
+        <br>
         <p>Username: 
             <input type="text" name="username" required="required" size="34" maxlength="30">
         </p>
+        <br>
         <p>Password:
             <input type="password" name="password" required="required" size="35" maxlength="30">
         </p>
+        <br>
         <P>Phone Number
             <select name="number" id="number">
                 <option value="select-">+--</option>
@@ -57,17 +79,23 @@
             </select>
             <input type="text" name="number" size="22" maxlength="10">
         </P>
+        <br>
         <p>Enter your date of birth:
             <input type="date">
         </p>
+        <br>
         <p>Select your gender:
             <input type="radio" name="gender" value="Male"> Male
             <input type="radio" name="gender" value="Female"> Female
         </p>
+        <br>
         <p>
             <input type="checkbox" name="remember">Remember me on this site
         </p>
-        <button>Sign-up</button>
+        <br>
+        <button>Register</button>
+        <br>
+        <br>
     </fieldset>
     </form>
 </body>
